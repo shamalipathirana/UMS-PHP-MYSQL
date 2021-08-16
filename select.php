@@ -6,8 +6,9 @@
     $result_set = mysqli_query($connection,$query);
     if($result_set){
         echo mysqli_num_rows($result_set);
+        echo "<br>";
         //echo "Query is successfull";
-        $record = mysqli_fetch_assoc($result_set);
+        /*$record = mysqli_fetch_assoc($result_set);
         echo "<pre>";
         print_r($record);
         //output the result
@@ -23,7 +24,11 @@
         echo "<pre>";
         print_r($record);
         //output the result
-        echo "</pre>";
+        echo "</pre>";*/
+
+        while($record=mysqli_fetch_assoc($result_set)){
+            echo $record['first_name']."<br>";
+        }
 
     }
     else{
