@@ -9,15 +9,15 @@
 )
 */
 
-$first_name = 'Isuru';
-$last_name = 'Pathirna';
-$email = 'isurupathirana@gmail.com';
-$password = 'mypassword2';
+$first_name = 'Dinali';
+$last_name = 'Jayasinghe';
+$email = 'dinali1996@gmail.com';
+$password = 'mypassword6';
 $is_deleted = 0;
 
 $hashed_password = sha1($password);
 //echo "hashed password:{$hashed_password}";
-$query = "INSERT INTO user (first_name,last_name,email,password,is_deleted) VALUES ('{$first_name}','{$last_name}','{$email}','{$password}',{$is_deleted})";
+$query = "INSERT INTO user (first_name,last_name,email,password,is_deleted) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}',{$is_deleted})";
 
 //execute query
 
