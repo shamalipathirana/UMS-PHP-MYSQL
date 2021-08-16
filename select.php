@@ -3,9 +3,10 @@
 <?php
     $query="SELECT * FROM user";
 
-    $result_set=mysqli_query($connction,$query);
+    $result_set = mysqli_query($connection,$query);
     if($result_set){
-        echo "Query is successfull";
+        echo mysqli_num_rows($result_set);
+        //echo "Query is successfull";
     }
     else{
         echo "Query is unsuccessful";
