@@ -8,34 +8,22 @@
   LIMIT 1
   */ 
 
-
+?>
+<?php
 $update_query="UPDATE user SET first_name='Deshan' WHERE first_name='Isuru';
 $result_set=mysqli_query($conection,$upsate_query);
 
 
 if($result_set){
     echo mysqli_affected_rows($connection);
-    
+    echo "<br>";
 }else{
-    
-    echo "query unsuccessful";
+    echo "Query unsuccessful";
 }
 
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update query</title>
-</head>
-<body>
-    
-</body>
-</html>
 
-<?php  
+
+
 mysqli_close($connection );
 ?>
