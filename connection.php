@@ -1,6 +1,6 @@
 <?php
 
-$connection=mysqli_connection('localhost','root','','userdb');
+$connection = mysqli_connect('localhost','root','','userdb');
 
 
 //mysqli_connect_errno(); mysqli_connect_error();
@@ -9,5 +9,7 @@ $connection=mysqli_connection('localhost','root','','userdb');
 
 if(mysqli_connect_errno()){
     die('database connection failed'.mysqli_connect_error());
+}else{
+    echo "connection successful";
 }
 ?>
