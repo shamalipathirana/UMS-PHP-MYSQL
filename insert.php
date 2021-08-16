@@ -9,10 +9,10 @@
 )
 */
 
-$first_name = 'Shamali';
+$first_name = 'Isuru';
 $last_name = 'Pathirna';
-$email = 'shamalipathirana@gmail.com';
-$password = 'mypassword1';
+$email = 'isurupathirana@gmail.com';
+$password = 'mypassword2';
 $is_deleted = 0;
 
 $hashed_password = sha1($password);
