@@ -7,7 +7,22 @@
   WHERE column name=value
   LIMIT 1
   */ 
+
+
+$update_query="UPDATE user SET first_name='Deshan' WHERE first_name='Isuru';
+$result_set=mysqli_query($conection,$upsate_query);
+
+
+if($result_set){
+    echo mysqli_affected_rows($connection);
+    
+}else{
+    
+    echo "query unsuccessful";
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
