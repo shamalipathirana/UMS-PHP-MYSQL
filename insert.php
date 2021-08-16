@@ -14,6 +14,9 @@ $last_name = 'Pathirna';
 $email = 'shamalipathirana@gmail.com';
 $password = 'mypassword1';
 $is_deleted = 0;
+
+$hashed_password = sha1($password);
+echo "hashed password:{$hashed_password}";
 ?>
 <!DOCTYPE html>
 <html lang="en">
