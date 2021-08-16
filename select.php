@@ -9,7 +9,19 @@
         //echo "Query is successfull";
         $record = mysqli_fetch_assoc($result_set);
         echo "<pre>";
-        print_r($records);
+        print_r($record);
+        //output the result
+        echo "</pre>";
+
+        $record = mysqli_fetch_assoc($result_set);
+        echo "<pre>";
+        print_r($record);
+        //output the result
+        echo "</pre>";
+
+        $record = mysqli_fetch_assoc($result_set);
+        echo "<pre>";
+        print_r($record);
         //output the result
         echo "</pre>";
 
