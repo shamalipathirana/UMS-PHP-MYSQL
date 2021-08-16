@@ -16,7 +16,18 @@ $password = 'mypassword1';
 $is_deleted = 0;
 
 $hashed_password = sha1($password);
-echo "hashed password:{$hashed_password}";
+//echo "hashed password:{$hashed_password}";
+$query = "INSERT INTO user (first_name,last_name,email,password,is_deleted) VALUES ('{$first_name}','{$last_name}','{$email}','{$password}',{$is_deleted})";
+
+//execute query
+
+$result=mysqli_query($connection,$query);
+if($result){
+    echo "One record added";
+}else{
+    echo "Database query failed";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
