@@ -7,6 +7,12 @@
     if($result_set){
         echo mysqli_num_rows($result_set);
         //echo "Query is successfull";
+        $record = mysqli_fetch_assoc($result_set);
+        echo "<pre>";
+        print_r($records);
+        //output the result
+        echo "</pre>";
+
     }
     else{
         echo "Query is unsuccessful";
